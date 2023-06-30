@@ -2,11 +2,13 @@ package com.kuoting.springbootmall.model;
 
 import java.util.Date;
 
+import com.kuoting.springbootmall.constant.ProductCategory;
+
 public class Product {
 
 	Integer productId;
 	String productName;
-	String category;
+	ProductCategory category;
 	String imageUrl;
 	Integer price;
 	Integer stock;
@@ -25,10 +27,10 @@ public class Product {
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-	public String getCategory() {
+	public ProductCategory getCategory() {
 		return category;
 	}
-	public void setCategory(String category) {
+	public void setCategory(ProductCategory category) {
 		this.category = category;
 	}
 	public String getImageUrl() {

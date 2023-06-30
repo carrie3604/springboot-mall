@@ -19,7 +19,6 @@ public class ProductController {
 	@GetMapping("/products/{productId}")
 	public ResponseEntity<Product> getProduct(@PathVariable Integer productId){  //此product值是從url路徑傳過來的
 		//為了在此方法裡取得商品數據,就要call service層
-
 		Product product = productService.getProductById(productId);
 
 		if(product!=null) {
